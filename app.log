@@ -1,0 +1,306 @@
+2023-08-12 00:25:13,842 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 23420 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 00:25:13,848 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 00:25:13,848 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 00:25:15,197 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 00:25:15,197 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 00:25:15,290 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 00:25:15,456 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 00:25:15,563 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 00:25:15,618 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 00:25:15,678 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 00:25:15,680 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 00:25:15,796 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 00:25:15,904 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 00:25:16,310 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 00:25:16,320 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 00:25:16,650 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'JWTAuthenticationVerficationFilter' defined in file [C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes\com\example\demo\Security\JWTAuthenticationVerficationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfiguration' defined in file [C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes\com\example\demo\Security\WebSecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-08-12 00:25:16,664 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2023-08-12 00:25:16,668 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:25:16,668 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:25:16,670 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-08-12 00:25:16,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-08-12 00:25:16,752 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.demo.Security.WebSecurityConfiguration required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
+
+2023-08-12 00:28:50,581 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 25056 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 00:28:50,582 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 00:28:50,584 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 00:28:51,910 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 00:28:51,910 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 00:28:52,006 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 00:28:52,149 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 00:28:52,248 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 00:28:52,299 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 00:28:52,362 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 00:28:52,363 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 00:28:52,471 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 00:28:52,570 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 00:28:52,990 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 00:28:53,001 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 00:28:53,365 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'JWTAuthenticationVerficationFilter' defined in file [C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes\com\example\demo\Security\JWTAuthenticationVerficationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfiguration' defined in file [C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes\com\example\demo\Security\WebSecurityConfiguration.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-08-12 00:28:53,381 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2023-08-12 00:28:53,383 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:28:53,383 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:28:53,386 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-08-12 00:28:53,388 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-08-12 00:28:53,466 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.demo.Security.WebSecurityConfiguration required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
+
+2023-08-12 00:31:48,997 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 21888 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 00:31:48,999 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 00:31:49,000 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 00:31:50,305 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 00:31:50,305 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 00:31:50,408 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 00:31:50,635 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 00:31:50,735 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 00:31:50,797 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 00:31:50,837 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 00:31:50,839 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 00:31:50,947 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 00:31:51,056 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 00:31:51,518 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 00:31:51,538 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 00:31:51,855 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'JWTAuthenticationVerficationFilter' defined in file [C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes\com\example\demo\Security\JWTAuthenticationVerficationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfiguration': Unsatisfied dependency expressed through field 'bCryptPasswordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-08-12 00:31:51,875 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2023-08-12 00:31:51,879 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:31:51,879 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:31:51,880 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-08-12 00:31:51,884 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-08-12 00:31:51,955 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bCryptPasswordEncoder in com.example.demo.Security.WebSecurityConfiguration required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
+
+2023-08-12 00:33:14,107 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 36284 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 00:33:14,109 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 00:33:14,109 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 00:33:15,358 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 00:33:15,359 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 00:33:15,456 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 00:33:15,694 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 00:33:15,799 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 00:33:15,861 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 00:33:15,911 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 00:33:15,913 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 00:33:16,028 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 00:33:16,140 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 00:33:16,620 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 00:33:16,630 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 00:33:16,947 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter [main] Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'JWTAuthenticationVerficationFilter' defined in file [C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes\com\example\demo\Security\JWTAuthenticationVerficationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfiguration': Unsatisfied dependency expressed through field 'bCryptPasswordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-08-12 00:33:16,961 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2023-08-12 00:33:16,964 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:33:16,964 WARN org.apache.catalina.loader.WebappClassLoaderBase [main] The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623)
+2023-08-12 00:33:16,966 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-08-12 00:33:16,968 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-08-12 00:33:17,043 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bCryptPasswordEncoder in com.example.demo.Security.WebSecurityConfiguration required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
+
+2023-08-12 00:34:38,804 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 37552 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 00:34:38,806 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 00:34:38,806 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 00:34:40,066 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 00:34:40,066 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 00:34:40,158 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 00:34:40,396 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 00:34:40,503 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 00:34:40,562 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 00:34:40,617 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 00:34:40,618 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 00:34:40,734 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 00:34:40,841 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 00:34:41,249 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 00:34:41,271 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 00:34:41,639 DEBUG com.example.demo.Security.JWTAuthenticationVerficationFilter [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2023-08-12 00:34:42,181 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 3.69 seconds (JVM running for 4.028)
+2023-08-12 01:07:21,861 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
+2023-08-12 01:07:21,863 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
+2023-08-12 01:07:25,297 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 21144 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 01:07:25,298 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 01:07:25,298 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 01:07:26,794 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 01:07:26,795 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 01:07:26,884 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 01:07:27,105 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 01:07:27,202 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 01:07:27,261 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 01:07:27,298 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 01:07:27,299 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 01:07:27,412 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 01:07:27,517 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 01:07:27,907 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 01:07:27,918 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 01:07:28,265 DEBUG com.example.demo.Security.JWTAuthenticationVerficationFilter [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2023-08-12 01:07:28,827 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 3.852 seconds (JVM running for 4.151)
+2023-08-12 01:11:11,784 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
+2023-08-12 01:11:11,786 INFO com.zaxxer.hikari.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
+2023-08-12 01:11:13,425 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 20916 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 01:11:13,427 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 01:11:13,428 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 01:11:14,773 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 01:11:14,774 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 01:11:14,869 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 01:11:15,159 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 01:11:15,269 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 01:11:15,309 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 01:11:15,354 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 01:11:15,356 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 01:11:15,492 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 01:11:15,586 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 01:11:16,043 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 01:11:16,054 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 01:11:16,416 DEBUG com.example.demo.Security.JWTAuthenticationVerficationFilter [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2023-08-12 01:11:16,981 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 3.884 seconds (JVM running for 4.339)
+2023-08-12 01:12:19,167 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-08-12 01:12:19,176 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-08-12 01:12:20,962 INFO com.example.demo.SareetaApplication [main] Starting SareetaApplication on BFSI-MEDG001C with PID 31204 (C:\Users\Falcorp_Louis\Desktop\Project\Project4\starter_code\target\classes started by Falcorp_Louis in C:\Users\Falcorp_Louis\Desktop\Project\Project4)
+2023-08-12 01:12:20,965 DEBUG com.example.demo.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-08-12 01:12:20,966 INFO com.example.demo.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2023-08-12 01:12:22,326 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-08-12 01:12:22,327 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-08-12 01:12:22,415 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-08-12 01:12:22,677 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-12 01:12:22,802 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-12 01:12:22,854 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-08-12 01:12:22,908 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2023-08-12 01:12:22,911 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2023-08-12 01:12:23,022 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-08-12 01:12:23,137 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-12 01:12:23,580 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.User (class must be instantiated by Interceptor)
+2023-08-12 01:12:23,591 INFO org.hibernate.tuple.PojoInstantiator [main] HHH000182: No default (no-argument) constructor for class: com.example.demo.model.persistence.Item (class must be instantiated by Interceptor)
+2023-08-12 01:12:23,938 DEBUG com.example.demo.Security.JWTAuthenticationVerficationFilter [main] Filter 'JWTAuthenticationVerficationFilter' configured for use
+2023-08-12 01:12:24,492 INFO com.example.demo.SareetaApplication [main] Started SareetaApplication in 3.859 seconds (JVM running for 4.358)
+2023-08-12 04:13:38,463 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 11:07:39,079 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h31m48s787ms871µs100ns).
+2023-08-12 15:34:48,462 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-08-12 15:34:48,480 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
